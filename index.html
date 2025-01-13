@@ -1,1 +1,83 @@
-<h1>www.rahicrop.com</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAHI CROP SCIENCE PVT LTD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .contact-details p {
+      margin: 10px 0;
+    }
+    .contact-details a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #message {
+      margin-top: 15px;
+      color: #28a745;
+      font-size: 14px;
+      visibility: hidden;
+    }
+    .visible {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-details">
+      <p><strong>Name:</strong>RAHI CROP SCIENCE PVT LTD</p>
+      <p><strong>Email:</strong> <a href="mailto:info@rahicrop.com">info@rahicrop.com</a></p>
+      <p><strong>Phone:</strong> +91 9921202320</p>
+      <p><strong>Website:</strong> <a href="https://www.rahicrop.com" target="_blank">www.rahicrop.com</a></p>
+    </div>
+    <p id="message">Thank you for visiting! We’ll get back to you soon.</p>
+  </div>
+  <script>
+    document.getElementById('showMessageBtn').addEventListener('click', function() {
+      document.getElementById('message').classList.add('visible');
+    });
+  </script>
+</body>
+</html>
